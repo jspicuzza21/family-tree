@@ -27,7 +27,6 @@ describe('Family Tree', () => {
 
   test('Has an insert method.', () => {
     const szwajkowskis = new FamilyTree('Pop');
-
     expect(typeof szwajkowskis.insert).toEqual('function');
   });
 
@@ -149,12 +148,13 @@ describe('Family Tree', () => {
 
       amysFamily.insert('Henry');
       amysFamily.insert('Vivian');
-
+console.log(szwajkowskis)
       const log = szwajkowskis.log();
 
       expect(
         log.indexOf(
-          `-- Pop
+          
+`-- Pop
 ---- Mike
 ------ Eliot
 ------ Elise
